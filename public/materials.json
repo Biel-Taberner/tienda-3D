@@ -1,0 +1,255 @@
+[
+    {
+        "collection_id": 2,
+        "model_id": 1,
+        "textures": [
+            {
+                "id": 1,
+                "folder_path": "/Textures/Elegant Shoes Shelf/",
+                "diff_texture": "",
+                "normal_texture": "",
+                "material": {
+                    "uuid": "64fbb94e-e869-4d5c-8e80-32753e566d36"
+                }
+            }
+        ],
+        "materials": [
+            {
+                "uuid": "64fbb94e-e869-4d5c-8e80-32753e566d36",
+                "name": "shoe_base",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#3F3F3F"
+            },
+            {
+                "uuid": "94f757b3-3cd9-4db6-b1de-921d0a4848ae",
+                "name": "shoe_support",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#272727"
+            },
+            {
+                "uuid": "eaf2739f-449e-4c22-8aca-e7f8cb269dbc",
+                "name": "shoe_support2",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#3F3F3F"
+            },
+            {
+                "uuid": "1a7c0dce-f821-4def-8a1f-618459fda3c6",
+                "name": "shoe_cylinder_adjust",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#272727"
+            },
+            {
+                "uuid": "e1367515-61db-4d4b-82bf-baff4b37b612",
+                "name": "shoe_adjuster",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#272727"
+            },
+            {
+                "uuid": "e8df652e-c5d6-4734-9e1e-d715869a6562",
+                "name": "Band",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#EEEBD9"
+            },
+            {
+                "uuid": "5ea5caeb-df67-4fac-b499-bfddbbc25f2f",
+                "name": "Punkte",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#000000"
+            },
+            {
+                "uuid": "2e7c460d-a1af-45dd-b1b3-9109471637f0",
+                "name": "KunstfaserGewebe",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#D7D1C0"
+            },
+            {
+                "uuid": "5a124058-f44a-4a71-9a04-2644f5d34dce",
+                "name": "Material_0",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#000000"
+            },
+            {
+                "uuid": "3d600e80-8fb6-4b89-a0cf-e7b931fe9729",
+                "name": "SohleGummi",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#121212"
+            },
+            {
+                "uuid": "4b5be7c8-85de-46b2-b700-1361d69af2b8",
+                "name": "SohleStoff",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "SohleStoff_baseColor.png",
+                    "normal_texture": ""
+                },
+                "color": "#121212"
+            },
+            {
+                "uuid": "311fbec0-9f22-41cc-9ceb-35c212862507",
+                "name": "Chrome",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#000000"
+            },
+            {
+                "uuid": "69ee1e45-2b83-41aa-b87f-ff13fe6f5546",
+                "name": "KunstfaserGewebe_Absatz",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "96ad300e-f82d-4c9f-a1c4-4d8107a6441d",
+                "name": "aiStandardSurface14SG",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "aiStandardSurface14SG_baseColor.png",
+                    "normal_texture": "aiStandardSurface14SG_normal.png"
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "98a6eb21-d3da-4ac6-9cd8-51a98a40dd2a",
+                "name": "black",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#241E0E"
+            },
+            {
+                "uuid": "4fbe37a3-9fe0-42bf-b911-d681fafd52c3",
+                "name": "outsole",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#E71816"
+            },
+            {
+                "uuid": "9e268443-63c0-4088-8fd5-6463a26a13ba",
+                "name": "top_piece",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#171717"
+            },
+            {
+                "uuid": "e15312b2-8738-47f7-ab7e-a253a99df670",
+                "name": "insole",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#1B1B1B"
+            },
+            {
+                "uuid": "fb9518db-4a58-42cb-9f50-8411e959a2e2",
+                "name": "Material0-material",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#676767"
+            },
+            {
+                "uuid": "63e4159f-a9a9-4834-8895-d72fd3fd73f1",
+                "name": "Material8-material",
+                "type": "MeshStandardMaterial",
+                "textures": {},
+                "color": "#5D5D5D"
+            },
+            {
+                "uuid": "453dae1a-af91-493b-8e91-0dc6abd16028",
+                "name": "Material1-material",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Material4-material_baseColor.png",
+                    "normal_texture": ""
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "f947de03-aebd-45ad-a314-63b4fe51d319",
+                "name": "Material2-material",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Material4-material_baseColor.png",
+                    "normal_texture": ""
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "cf584152-36df-4e78-a6b8-5a396baba2f7",
+                "name": "Material3-material",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Material3-material_baseColor.png",
+                    "normal_texture": ""
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "43bb1d5e-9349-4771-baaf-ce92b8faa7bf",
+                "name": "Material4-material",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Material4-material_baseColor.png",
+                    "normal_texture": ""
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "fbef6715-24f0-41ab-b62b-b845d85a8d82",
+                "name": "Material5-material",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Material5-material_baseColor.png",
+                    "normal_texture": ""
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "135589ff-ae03-4c0f-a0c2-d9e0eda5b719",
+                "name": "Material6-material",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Material6-material_baseColor.png",
+                    "normal_texture": ""
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "b06f7f55-0fdf-4c6a-becc-9c207d5f32f5",
+                "name": "sh_oldOxfordShoe",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "sh_oldOxfordShoe_diffuse.jpg",
+                    "normal_texture": "sh_oldOxfordShoe_normal.jpg"
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "eb12aad4-bf50-446d-bee0-efa6c5f067a8",
+                "name": "BlackLeather",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "BlackLeather_baseColor.jpg",
+                    "normal_texture": "BlackLeather_normal.png"
+                },
+                "color": "#0F0F0F"
+            },
+            {
+                "uuid": "5a566969-3f00-47f8-ac71-eb27e95002aa",
+                "name": "Cord",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Cord_baseColor.jpg",
+                    "normal_texture": "Cord_normal.png"
+                },
+                "color": "#0F0F0F"
+            }
+        ]
+    }
+]
