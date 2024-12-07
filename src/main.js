@@ -1,6 +1,14 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader, TrackballControls } from "three/examples/jsm/Addons.js";
+import { ShoeController } from "./controller/ShoeController";
+import { loadMaterials } from "./helpers/MaterialFunctions";
+
+
+const shoeController = new ShoeController();
+
+const shoes = await shoeController.getAllShoes();
+
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -21,13 +29,23 @@ scene.add(camera);
 
 const loader = new GLTFLoader();
 
-loader.load("/Models/Elegant Shoes Shelf/shoe_shelf_2.gltf", (gltf) => {
-  const model = gltf.scene;
 
-  model.rotation.y = Math.PI / 1;
+for (const shoe of shoes) {
 
-  scene.add(model)
-})
+  loader.load(`/Models/Elegant Shoes Shelf/${shoe.getMesh()}`, (gltf) => {
+
+    const model = gltf.scene;
+
+    loadMaterials(model, shoe);
+
+    model.rotation.y = Math.PI / 1;
+
+    scene.add(model)
+
+  })
+
+}
+
 
 const size = 10;
 const divisions = 10;
