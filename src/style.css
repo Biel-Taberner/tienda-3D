@@ -254,3 +254,86 @@ width: 0;
 height: 10px; 
 background-color: white;
 }
+
+
+
+.footer {
+width: auto;
+height: fit-content;
+grid-area: footer;
+background-color: yellow;
+}
+
+.footer-container {
+width: 100%;
+height: 100%;
+}
+
+.footer-container-info-box {
+height: 100%;
+background-color: #0f0f0f;
+display: flex;
+justify-content: space-between;
+color: whitesmoke;
+padding: 100px;
+}
+
+.footer-container-info-box-tab {
+display: flex;
+flex-direction: column;
+row-gap: 40px;
+}
+
+.footer-container-info-box-tab-title-subcontainer {
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+}
+
+.footer-container-info-box-tab-title-subcontainer > h4 {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: larger;
+}
+
+.footer-container-info-box-tab-title-subcontainer-hr {
+border-color: rgba(255, 0, 0, 0.75);
+width: 35%;
+}
+
+.footer-container-info-box-tab-links-subcontainer {
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+}
+
+.box-tab-link > a, .social-media-tab-link > a {
+color: #9c9ca3;
+text-decoration: none;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+transition: 0.3s;
+}
+
+.box-tab-link > a:hover, .social-media-tab-link > a:hover {
+color: #dfdfe9;
+}
+
+.footer-container-social-media-box-tab-links-subcontainer {
+display: flex;
+flex-direction: row;
+column-gap: 10px;
+}
+
+.social-media-tab-link {
+border: 2px solid black;
+border-radius: 55px;
+padding: 5px;
+background-color: #070707;
+transition: 0.3s;
+}
+
+.social-media-tab-link:hover {
+background-color: #2c2c2c;
+border-color: #202020;
+box-shadow: 1px 1px 15px rgb(0, 0, 0);
+transform: scale(1.10);
+}

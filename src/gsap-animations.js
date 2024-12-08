@@ -123,3 +123,20 @@ timeline.to(splittedTitleText.list, {
   stagger: 0.05,
   textShadow: "2px 2px 10px black"
 })
+
+
+gsap.set(".footer-container-info-box-tab-title-subcontainer-hr", {
+  width: "0px",
+  visibility: "hidden",
+})
+
+gsap.to(".footer-container-info-box-tab-title-subcontainer-hr", {
+  stagger: 0.25,
+  duration: 1,
+  visibility: "visible",
+  ease: "power2.out",
+  width: "35%",
+  scrollTrigger: {
+    trigger: ".footer-container-info-box-tab-title-subcontainer-hr",
+  }
+})
