@@ -78,3 +78,30 @@ gsap.to(e.target, {
     scale: "1",
 });
 });
+
+
+const timeline = gsap.timeline();
+
+timeline.to("#bottomBorderTitleLine", {
+  duration: 0.35,
+  stagger: 0.25,
+  width: "100%"
+})
+
+timeline.to("#rightBorderTitleLine", {
+  duration: 0.35,
+  stagger: 0.25,
+  height: "100%"
+})
+
+timeline.to("#topBorderTitleLine", {
+  duration: 0.35,
+  stagger: 0.25,
+  width: "100%"
+})
+
+timeline.to("#leftBorderTitleLine", {
+  duration: 0.35,
+  stagger: 0.25,
+  height: "100%"
+})
