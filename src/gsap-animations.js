@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import Letterize from "letterizejs"
 
 document.querySelectorAll("#header-container-link").forEach((link) => {
 link.addEventListener("mouseover", (e) => {
@@ -82,6 +83,18 @@ gsap.to(e.target, {
 
 const timeline = gsap.timeline();
 
+const splittedTitleText = new Letterize({targets: "#main-body-first-section-title-text"});
+
+timeline.from(splittedTitleText.list, {
+
+  stagger: 0.075,
+  duration: 0.5,
+  opacity: 0,
+  transformOrigin: "0% 50% -50",
+  rotateY: 180,
+
+})
+
 timeline.to("#bottomBorderTitleLine", {
   duration: 0.35,
   stagger: 0.25,
@@ -104,4 +117,9 @@ timeline.to("#leftBorderTitleLine", {
   duration: 0.35,
   stagger: 0.25,
   height: "100%"
+})
+
+timeline.to(splittedTitleText.list, {
+  stagger: 0.05,
+  textShadow: "2px 2px 10px black"
 })

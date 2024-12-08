@@ -243,6 +243,11 @@ font-size: 80px;
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+#main-body-first-section-title-text span {
+display: inline-block;
+transform-origin: 0% 50%;
+}
+
 .bottomBorderTitleLine, .topBorderTitleLine {
 position: relative; 
 width: 0; 
