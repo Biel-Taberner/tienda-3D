@@ -15,8 +15,6 @@ const vectorPointsController = new VectorPointsController();
 
 const vectorPoints = await vectorPointsController.getAllVectorPoints();
 
-console.log(vectorPoints)
-
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -70,7 +68,7 @@ scene.add(ambientalLight)
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
-drawVectorsToHTML(vectorPoints, camera, renderer);
+drawVectorsToHTML(vectorPoints);
 
 const tick = () => {
 
