@@ -1,29 +1,56 @@
 [
     {
         "position": {
-            "x": 1,
-            "y": 1,
-            "z": 0
+            "x": 1.5,
+            "y": 2,
+            "z": -3.6
         },
         "element": "point-0",
-        "text": "Hola Mundo"
+        "text": "Old oxford shoes"
     },
     {
         "position": {
-            "x": 3,
-            "y": 3,
-            "z": 0
+            "x": -1.5,
+            "y": 2,
+            "z": -3.6
         },
         "element": "point-1",
-        "text": "Adios Mundo"
+        "text": "Tacones fancy"
     },
     {
         "position": {
-            "x": 2,
-            "y": 2,
-            "z": 0
+            "x": 3.5,
+            "y": 2.85,
+            "z": -1.15
         },
         "element": "point-2",
-        "text": "Punto en medio"
+        "text": "Derby shoes"
+    },
+    {
+        "position": {
+            "x": -3.5,
+            "y": 2.85,
+            "z": -1.15
+        },
+        "element": "point-3",
+        "text": "Tacones rojos y negros"
+    },
+    {
+        "position": {
+            "x": 1.4,
+            "y": 3.85,
+            "z": 1.25
+        },
+        "element": "point-4",
+        "text": "Derby shoes modern"
+    },
+    {
+        "position": {
+            "x": -1.6,
+            "y": 3.85,
+            "z": 1.25
+        },
+        "element": "point-5",
+        "text": "Tacones elevados"
     }
 ]
