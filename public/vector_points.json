@@ -1,0 +1,29 @@
+[
+    {
+        "position": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+        },
+        "element": "point-0",
+        "text": "Hola Mundo"
+    },
+    {
+        "position": {
+            "x": 3,
+            "y": 3,
+            "z": 0
+        },
+        "element": "point-1",
+        "text": "Adios Mundo"
+    },
+    {
+        "position": {
+            "x": 2,
+            "y": 2,
+            "z": 0
+        },
+        "element": "point-2",
+        "text": "Punto en medio"
+    }
+]
