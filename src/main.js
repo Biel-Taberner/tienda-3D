@@ -3,11 +3,19 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader, TrackballControls } from "three/examples/jsm/Addons.js";
 import { ShoeController } from "./controller/ShoeController";
 import { loadMaterials } from "./helpers/MaterialFunctions";
+import VectorPointsController from "./controller/VectorPointsController";
+import { updateVectorPoints, drawVectorsToHTML } from "./helpers/VectorPointsFunctions";
 
 
 const shoeController = new ShoeController();
 
 const shoes = await shoeController.getAllShoes();
+
+const vectorPointsController = new VectorPointsController();
+
+const vectorPoints = await vectorPointsController.getAllVectorPoints();
+
+console.log(vectorPoints)
 
 
 const width = window.innerWidth;
@@ -60,28 +68,16 @@ const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientalLight)
 
 
-const points = [
-  {
-    position: new THREE.Vector3(0, 1.75, 0),
-    element: document.querySelector('.point-0')
-  }
-]
-
 const controls = new OrbitControls(camera, renderer.domElement);
+
+drawVectorsToHTML(vectorPoints, camera, renderer);
 
 const tick = () => {
 
   controls.update()
 
-  // Recorrer cada punt de l’array points
-  for(const point of points)   {
-    const screenPosition = point.position.clone();
-    screenPosition.project(camera);
+  updateVectorPoints(vectorPoints, camera, renderer)
 
-    const translateX = screenPosition.x * renderer.domElement.width * 0.5
-    const translateY = -screenPosition.y * renderer.domElement.height * 0.5
-    point.element.style.transform = `translateX(${translateX}px) translateY(${translateY}px)`
-  }
 }
 
 // Render loop
