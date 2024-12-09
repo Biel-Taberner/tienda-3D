@@ -9,7 +9,7 @@ export class MaterialService {
 
         const materialsJSON = await fetchedMaterials.json();
 
-        return materialsJSON.map(materialJSON => this.#jsonToObject(materialJSON));
+        return materialsJSON.flatMap(materialJSON => this.#jsonToObject(materialJSON));
     }
 
     #jsonToObject(materialJSON) {
