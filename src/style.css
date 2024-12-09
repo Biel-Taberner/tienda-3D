@@ -363,6 +363,7 @@ font-family: 'Courier New', Courier, monospace;
 font-size: 20px;
 font-family: 'Courier New', Courier, monospace;
 line-height: 30px;
+text-shadow: 0px 0px 10px black;
 }
 
 .slide-canvas-second-info-subcontent {
