@@ -1,12 +1,14 @@
 export class Shoe {
 
     #id;
+    #type;
     #name;
     #mesh;
     #materials;
 
-    constructor(id, name, mesh) {
+    constructor(id, type, name, mesh) {
         this.#id = id;
+        this.#type = type;
         this.#name = name;
         this.#mesh = mesh;
     }
@@ -17,6 +19,14 @@ export class Shoe {
 
     setID(id) {
         this.#id = id;
+    }
+
+    getType() {
+        return this.#type;
+    }
+
+    setType(type) {
+        this.#type = type;
     }
 
     getName() {

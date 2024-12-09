@@ -14,7 +14,7 @@ export class ShoeService {
 
     #jsonToObject(shoeJSON) {
 
-        return new Shoe(shoeJSON.id, shoeJSON.name, shoeJSON.mesh);
+        return new Shoe(shoeJSON.id, shoeJSON.type, shoeJSON.name, shoeJSON.mesh);
 
     }
 
