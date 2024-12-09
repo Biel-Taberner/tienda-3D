@@ -239,5 +239,55 @@
                 "color": "#FFFFFF"
             }
         ]
+    },
+    {
+        "model_id": 3,
+        "materials": [
+            {
+                "id": 12,
+                "name": "sh_oldOxfordShoe",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "sh_oldOxfordShoe_diffuse.jpg",
+                    "normal_texture": "sh_oldOxfordShoe_normal.jpg"
+                },
+                "color": "#FFFFFF"
+            }
+        ]
+    },
+    {
+        "model_id": 4,
+        "materials": [
+            {
+                "id": 13,
+                "name": "MAT_Shoe_L",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "MAT_Shoe_L_baseColor.png",
+                    "normal_texture": "MAT_Shoe_L_normal.png"
+                },
+                "color": "#FFFFFF"
+            },
+            {
+                "id": 14,
+                "name": "MAT_Sole_L",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "MAT_Sole_L_baseColor.png",
+                    "normal_texture": "MAT_Sole_L_normal.png"
+                },
+                "color": "#0A0A0A"
+            },
+            {
+                "id": 15,
+                "name": "MAT_Laces_L",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "MAT_Laces_L_baseColor.png",
+                    "normal_texture": "MAT_Laces_L_normal.png"
+                },
+                "color": "#FFFFFF"
+            }
+        ]
     }
 ]
