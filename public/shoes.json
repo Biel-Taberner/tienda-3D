@@ -22,5 +22,11 @@
         "type": "Shoe",
         "name": "Adidas Football Boots",
         "mesh": "adidas_football_boots.gltf"
+    },
+    {
+        "id": 6,
+        "type": "Shoe",
+        "name": "Espirit Heels",
+        "mesh": "espirit_heels.gltf"
     }
 ]

@@ -154,6 +154,7 @@ const colors = [
   "#8D6346",
   "#6E0000",
   "#6A878C",
+  "#b4b2a4"
 ];
 const sliders = gsap.utils.toArray(".slider");
 const slidesArray = sliders.map((slider) =>
