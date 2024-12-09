@@ -55,7 +55,7 @@ export function setupCanvasScenesByNumberOfShoes(shoes = []) {
 
             const model = gltf.scene;
 
-            loadMaterials(model, shoes[i]);
+            // loadMaterials(model, shoes[i]);
         
             shoeGFXObject.add(model)
         })
@@ -73,6 +73,10 @@ export function setupCanvasScenesByNumberOfShoes(shoes = []) {
         const ambientalLight = new THREE.AmbientLight(lightingIntensities[i].color, lightingIntensities[i].intensity);
         scene.add(ambientalLight);
         ambientalLight.position.y = 0;
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.y = 1;
+        scene.add(directionalLight)
 
         const timer = new Timer();
 
