@@ -21,7 +21,7 @@ export class ShoeController {
 
             const materialsShoe = [];
 
-            for (const material of materials[0]) {
+            for (const material of materials) {
 
                 if (material.getModel() === shoe.getID()) {
 
@@ -36,6 +36,14 @@ export class ShoeController {
         }
 
         return shoes;
+
+    }
+
+    async findAllShoesByType(shoeType) {
+
+        const allShoes = await this.getAllShoes();
+
+        return allShoes.filter(shoe => shoe.getType().toLowerCase() === shoeType.toLowerCase());
 
     }
 
