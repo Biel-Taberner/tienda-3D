@@ -1,7 +1,20 @@
 [
     {
         "id": 2,
+        "type": "Expositor",
         "name": "Elegant Shoe Expositor",
         "mesh": "elegant_shoe_shelf.gltf"
+    },
+    {
+        "id": 3,
+        "type": "Shoe",
+        "name": "Old Oxford Shoe",
+        "mesh": "old_oxford_shoe.gltf"
+    },
+    {
+        "id": 4,
+        "type": "Shoe",
+        "name": "Nike Air Jordan Shoe",
+        "mesh": "air_jordan.gltf"
     }
 ]
