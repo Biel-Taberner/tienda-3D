@@ -297,6 +297,15 @@ align-items: center;
     background-color: #8D6346;
 }
 
+.slide-2 {
+    background-color: #6E0000;
+}
+
+.canvas-model-renderer {
+    width: 100%;
+    height: 100%;
+}
+
 .button-container {
 width: 100%;
 display: flex;
