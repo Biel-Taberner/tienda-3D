@@ -1,5 +1,8 @@
 import gsap from "gsap";
 import Letterize from "letterizejs"
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 document.querySelectorAll("#header-container-link").forEach((link) => {
 link.addEventListener("mouseover", (e) => {
@@ -140,3 +143,69 @@ gsap.to(".footer-container-info-box-tab-title-subcontainer-hr", {
     trigger: ".footer-container-info-box-tab-title-subcontainer-hr",
   }
 })
+
+
+
+
+
+
+
+const colors = [
+  "#8D6346",
+  "#cc0000",
+  "#663300",
+  "#006600",
+];
+const sliders = gsap.utils.toArray(".slider");
+const slidesArray = sliders.map((slider) =>
+  gsap.utils.toArray(".slide", slider)
+);
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+let currentIndex = 0;
+let isTweening = false;
+
+slidesArray.forEach((slides) => {
+  slides.forEach((slide, i) => {
+    gsap.set(slide, {
+      // backgroundColor: colors[i],
+      xPercent: i > 0 && 100
+    });
+  });
+});
+
+const gotoSlide = (value) => {
+  if (isTweening) return;
+  isTweening = true;
+  const first = slidesArray[0];
+  const currentSlides = [];
+  const nextSlides = [];
+  slidesArray.forEach((slides) => currentSlides.push(slides[currentIndex]));
+  if (first[currentIndex + value]) {
+    currentIndex += value;
+  } else {
+    currentIndex = value > 0 ? 0 : first.length - 1;
+  }
+  slidesArray.forEach((slides) => nextSlides.push(slides[currentIndex]));
+  if (value > 0) {
+    gsap.set(nextSlides, { xPercent: 100 });
+    gsap.to(currentSlides, {
+      xPercent: -100,
+      onComplete: () => (isTweening = false)
+    });
+  } else {
+    gsap.set(nextSlides, { xPercent: -100 });
+    gsap.to(currentSlides, {
+      xPercent: 100,
+      onComplete: () => (isTweening = false)
+    });
+  }
+  gsap.to(nextSlides, { xPercent: 0 });
+  gsap.to(nextSlides, {
+    backgroundColor: colors[currentIndex],
+    duration: 2
+  })
+};
+
+next.addEventListener("click", () => gotoSlide(1));
+prev.addEventListener("click", () => gotoSlide(-1));
