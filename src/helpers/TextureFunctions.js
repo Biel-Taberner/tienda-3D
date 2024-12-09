@@ -2,14 +2,14 @@ import { TextureLoader } from "three";
 
 const textureLoader = new TextureLoader();
 
-export function loadTextures(texture) {
+export function loadTextures(textureFolder, texture) {
 
     return texture.getNormalTexture() === null
         ? [ 
-            textureLoader.load(`/Textures/Elegant Shoes Shelf/${texture.getDiffTexture()}`), 
-            textureLoader.load(`/Textures/Elegant Shoes Shelf/${texture.getNormalTexture()}`), 
+            textureLoader.load(`/Textures/${textureFolder}/${texture.getDiffTexture()}`), 
+            textureLoader.load(`/Textures/${textureFolder}/${texture.getNormalTexture()}`), 
         ]
         : [
-            textureLoader.load(`/Textures/Elegant Shoes Shelf/${texture.getDiffTexture()}`), 
+            textureLoader.load(`/Textures/${textureFolder}/${texture.getDiffTexture()}`), 
         ];
 }

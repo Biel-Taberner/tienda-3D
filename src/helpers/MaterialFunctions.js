@@ -1,4 +1,4 @@
-import { MeshStandardMaterial } from "three";
+import { MeshPhongMaterial, MeshStandardMaterial } from "three";
 import { loadTextures } from "./TextureFunctions";
 import { Texture } from "../model/Texture";
 
@@ -19,9 +19,9 @@ export function loadMaterials(gltfModel, shoeModel) {
 
                         if (shoeModelMaterial.getTextures() instanceof Texture) {
 
-                            const textures = loadTextures(shoeModelMaterial.getTextures())
+                            const textures = loadTextures(shoeModel.getName(), shoeModelMaterial.getTextures())
 
-                            model.material = new MeshStandardMaterial({
+                            model.material = new MeshPhongMaterial({
                                 color: shoeModelMaterial.getColor(),
                                 map: textures[0],
                                 normalMap: textures.length === 2 ? textures[1] : null,
