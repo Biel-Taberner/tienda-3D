@@ -18,6 +18,10 @@ export function setupCanvasScenesByNumberOfShoes(shoes = []) {
             "color": 0xFFFFFF,
             "intensity": 0.5,
         },
+        {
+            "color": 0xFFFFFF,
+            "intensity": 1,
+        },
     ]
 
     const loader = new GLTFLoader();

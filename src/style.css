@@ -301,6 +301,10 @@ align-items: center;
     background-color: #6E0000;
 }
 
+.slide-3 {
+    background-color: #6A878C;
+}
+
 .canvas-model-renderer {
     width: 100%;
     height: 100%;

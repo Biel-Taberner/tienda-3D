@@ -153,8 +153,7 @@ gsap.to(".footer-container-info-box-tab-title-subcontainer-hr", {
 const colors = [
   "#8D6346",
   "#6E0000",
-  "#663300",
-  "#006600",
+  "#6A878C",
 ];
 const sliders = gsap.utils.toArray(".slider");
 const slidesArray = sliders.map((slider) =>

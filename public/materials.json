@@ -289,5 +289,20 @@
                 "color": "#FFFFFF"
             }
         ]
+    },
+    {
+        "model_id": 5,
+        "materials": [
+            {
+                "id": 16,
+                "name": "Textured",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Textured_baseColor.jpg",
+                    "normal_texture": "Textured_normal.jpg"
+                },
+                "color": "#FFFFFF"
+            }
+        ]
     }
 ]

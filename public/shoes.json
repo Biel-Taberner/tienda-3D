@@ -16,5 +16,11 @@
         "type": "Shoe",
         "name": "Nike Air Jordan Shoe",
         "mesh": "air_jordan.gltf"
+    },
+    {
+        "id": 5,
+        "type": "Shoe",
+        "name": "Adidas Football Boots",
+        "mesh": "adidas_football_boots.gltf"
     }
 ]
