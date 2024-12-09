@@ -87,7 +87,7 @@ function animate() {
 
 animate();
 
-// Aquesta EventListener s'encarregarà de l'aspecte de la càmara i les dimensions del canvas de renderitzat
+// Aquesta EventListener s'encarregarà d'actualitzar l'aspecte de la càmara i les dimensions del canvas de renderitzat
 window.addEventListener('resize', () => {
 
   camera.aspect = width / height;
