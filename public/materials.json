@@ -256,50 +256,15 @@
         ]
     },
     {
-        "model_id": 4,
+        "model_id": 8,
         "materials": [
             {
-                "id": 13,
-                "name": "MAT_Shoe_L",
+                "id": 20,
+                "name": "lambert1",
                 "type": "MeshStandardMaterial",
                 "textures": {
-                    "diff_texture": "MAT_Shoe_L_baseColor.png",
-                    "normal_texture": "MAT_Shoe_L_normal.png"
-                },
-                "color": "#FFFFFF"
-            },
-            {
-                "id": 14,
-                "name": "MAT_Sole_L",
-                "type": "MeshStandardMaterial",
-                "textures": {
-                    "diff_texture": "MAT_Sole_L_baseColor.png",
-                    "normal_texture": "MAT_Sole_L_normal.png"
-                },
-                "color": "#0A0A0A"
-            },
-            {
-                "id": 15,
-                "name": "MAT_Laces_L",
-                "type": "MeshStandardMaterial",
-                "textures": {
-                    "diff_texture": "MAT_Laces_L_baseColor.png",
-                    "normal_texture": "MAT_Laces_L_normal.png"
-                },
-                "color": "#FFFFFF"
-            }
-        ]
-    },
-    {
-        "model_id": 5,
-        "materials": [
-            {
-                "id": 16,
-                "name": "Textured",
-                "type": "MeshStandardMaterial",
-                "textures": {
-                    "diff_texture": "Textured_baseColor.jpg",
-                    "normal_texture": "Textured_normal.jpg"
+                    "diff_texture": "lambert1_baseColor.jpg",
+                    "normal_texture": "lambert1_normal.jpg"
                 },
                 "color": "#FFFFFF"
             }

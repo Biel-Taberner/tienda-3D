@@ -28,5 +28,17 @@
         "type": "Shoe",
         "name": "Espirit Heels",
         "mesh": "espirit_heels.gltf"
+    },
+    {
+        "id": 7,
+        "type": "Iconic",
+        "name": "Adidas Flip Flops",
+        "mesh": "adidas_flip_flops.gltf"
+    },
+    {
+        "id": 8,
+        "type": "Iconic",
+        "name": "Crocs Slippers",
+        "mesh": "crocs_slippers.gltf"
     }
 ]

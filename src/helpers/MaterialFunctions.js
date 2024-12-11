@@ -1,4 +1,4 @@
-import { MeshPhongMaterial, MeshStandardMaterial } from "three";
+import { MeshPhongMaterial, MeshStandardMaterial, FrontSide } from "three";
 import { loadTextures } from "./TextureFunctions";
 import { Texture } from "../model/Texture";
 
@@ -25,12 +25,14 @@ export function loadMaterials(gltfModel, shoeModel) {
                                 color: shoeModelMaterial.getColor(),
                                 map: textures[0],
                                 normalMap: textures.length === 2 ? textures[1] : null,
+                                side: FrontSide
                             });
 
                         } else {
 
                             model.material = new MeshStandardMaterial({
                                 color: shoeModelMaterial.getColor(),
+                                side: FrontSide
                             });
 
                         }

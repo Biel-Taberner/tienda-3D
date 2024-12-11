@@ -4,14 +4,14 @@ import { Timer } from 'three/addons/misc/Timer.js';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { loadMaterials } from "./MaterialFunctions";
 
-export function setupCanvasScenesByNumberOfShoes(shoes = []) {
+export function setupCanvasScenesByNumberOfShoes(shoes = [], canvasToTarget, setCanvasPositionToAbsolute = false) {
 
     const width = window.innerWidth;
     const height = window.innerHeight;
 
     const lightingIntensities = [
         {
-            "color": 0x5c412e,
+            "color": 0xFFFFFF,
             "intensity": 2,
         },
         {
@@ -42,7 +42,7 @@ export function setupCanvasScenesByNumberOfShoes(shoes = []) {
 
         const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 
-        const canvasElement = document.querySelector(`#canvas-model-shoe-renderer-${i}`);
+        const canvasElement = document.querySelector(`${canvasToTarget}-${i}`);
 
         if (canvasElement && canvasElement.parentNode) {
             // Reemplazar el canvas actual con renderer.domElement
@@ -50,6 +50,10 @@ export function setupCanvasScenesByNumberOfShoes(shoes = []) {
 
             renderer.domElement.style.width = "100%";
             renderer.domElement.style.height = "100%";
+
+            if (setCanvasPositionToAbsolute) {
+                renderer.domElement.style.position = "absolute";
+            }
         }
 
         scene.add(camera);
@@ -63,7 +67,9 @@ export function setupCanvasScenesByNumberOfShoes(shoes = []) {
 
             const model = gltf.scene;
 
-            // loadMaterials(model, shoes[i]);
+            model.renderOrder = 0;
+
+            loadMaterials(model, shoes[i]);
         
             shoeGFXObject.add(model)
         })
