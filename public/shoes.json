@@ -50,7 +50,7 @@
     {
         "id": 10,
         "type": "Iconic",
-        "name": "Crocs Slippers",
-        "mesh": "crocs_slippers.gltf"
+        "name": "Nike Slippers",
+        "mesh": "nike_slippers.gltf"
     }
 ]
