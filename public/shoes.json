@@ -40,5 +40,17 @@
         "type": "Iconic",
         "name": "Crocs Slippers",
         "mesh": "crocs_slippers.gltf"
+    },
+    {
+        "id": 9,
+        "type": "Iconic",
+        "name": "Puma Sandals",
+        "mesh": "puma_sandals.gltf"
+    },
+    {
+        "id": 10,
+        "type": "Iconic",
+        "name": "Crocs Slippers",
+        "mesh": "crocs_slippers.gltf"
     }
 ]

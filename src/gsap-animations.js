@@ -162,6 +162,9 @@ const slidesArray = sliders.map((slider) =>
 );
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
+
+const next_icon = document.getElementById("next_icon");
+const prev_icon = document.getElementById("prev_icon");
 let currentIndex = 0;
 let isTweening = false;
 
@@ -209,3 +212,6 @@ const gotoSlide = (value) => {
 
 next.addEventListener("click", () => gotoSlide(1));
 prev.addEventListener("click", () => gotoSlide(-1));
+
+next_icon.addEventListener("click", () => gotoSlide(1));
+prev_icon.addEventListener("click", () => gotoSlide(-1));
