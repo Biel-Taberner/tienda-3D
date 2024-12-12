@@ -271,6 +271,29 @@
         ]
     },
     {
+        "model_id": 11,
+        "materials": [
+            {
+                "id": 22,
+                "name": "Material.001",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Nike logo.png"
+                },
+                "color": "#FFFFFF"
+            },
+            {
+                "id": 23,
+                "name": "Material.003",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Nike logo.png"
+                },
+                "color": "#FFFFFF"
+            }
+        ]
+    },
+    {
         "model_id": 12,
         "materials": [
             {
