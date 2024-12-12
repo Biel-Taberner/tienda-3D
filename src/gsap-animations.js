@@ -163,8 +163,6 @@ const slidesArray = sliders.map((slider) =>
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-const next_icon = document.getElementById("next_icon");
-const prev_icon = document.getElementById("prev_icon");
 let currentIndex = 0;
 let isTweening = false;
 
@@ -213,5 +211,60 @@ const gotoSlide = (value) => {
 next.addEventListener("click", () => gotoSlide(1));
 prev.addEventListener("click", () => gotoSlide(-1));
 
-next_icon.addEventListener("click", () => gotoSlide(1));
-prev_icon.addEventListener("click", () => gotoSlide(-1));
+
+const colorsIconShoes = [
+  "#8D6346",
+  "#6E0000",
+  "#6A878C",
+  "#b4b2a4"
+];
+const slidersIconic = gsap.utils.toArray(".slider-iconic");
+const slidesIconicArray = slidersIconic.map((slider) =>
+  gsap.utils.toArray(".slide-iconic", slider)
+);
+const next_icon = document.getElementById("next_icon");
+const prev_icon = document.getElementById("prev_icon");
+
+let currentIconicIndex = 0;
+let isIconTweening = false;
+
+slidesIconicArray.forEach((slides) => {
+  slides.forEach((slide, i) => {
+    gsap.set(slide, {
+      backgroundColor: "#171717",
+      xPercent: i > 0 && 100
+    });
+  });
+});
+
+const gotoIconSlide = (value) => {
+  if (isIconTweening) return;
+  isIconTweening = true;
+  const first = slidesIconicArray[0];
+  const currentIconicSlides = [];
+  const nextIconicSlides = [];
+  slidesIconicArray.forEach((slides) => currentIconicSlides.push(slides[currentIconicIndex]));
+  if (first[currentIconicIndex + value]) {
+    currentIconicIndex += value;
+  } else {
+    currentIconicIndex = value > 0 ? 0 : first.length - 1;
+  }
+  slidesIconicArray.forEach((slides) => nextIconicSlides.push(slides[currentIconicIndex]));
+  if (value > 0) {
+    gsap.set(nextIconicSlides, { xPercent: 100 });
+    gsap.to(currentIconicSlides, {
+      xPercent: -100,
+      onComplete: () => (isIconTweening = false)
+    });
+  } else {
+    gsap.set(nextIconicSlides, { xPercent: -100 });
+    gsap.to(currentIconicSlides, {
+      xPercent: 100,
+      onComplete: () => (isIconTweening = false)
+    });
+  }
+  gsap.to(nextIconicSlides, { xPercent: 0 });
+};
+
+next_icon.addEventListener("click", () => gotoIconSlide(1));
+prev_icon.addEventListener("click", () => gotoIconSlide(-1));
