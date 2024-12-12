@@ -269,5 +269,30 @@
                 "color": "#FFFFFF"
             }
         ]
+    },
+    {
+        "model_id": 12,
+        "materials": [
+            {
+                "id": 24,
+                "name": "MatCiabatta",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Suola__0_baseColor.png",
+                    "normal_texture": "Suola__0_normal.png"
+                },
+                "color": "#FFFFFF"
+            },
+            {
+                "id": 25,
+                "name": "Suola__0",
+                "type": "MeshStandardMaterial",
+                "textures": {
+                    "diff_texture": "Suola__0_baseColor.png",
+                    "normal_texture": "Suola__0_normal.png"
+                },
+                "color": "#FFFFFF"
+            }
+        ]
     }
 ]
