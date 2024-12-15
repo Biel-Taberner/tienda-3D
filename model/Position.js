@@ -1,4 +1,4 @@
-import Transform from "./Transform";
+import Transform from "/tienda-3D/model/Transform";
 
 export default class Position extends Transform {
 

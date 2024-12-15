@@ -1,4 +1,4 @@
-import { MaterialService } from "../service/MaterialService.js";
+import { MaterialService } from "/tienda-3D/service/MaterialService.js";
 
 export class MaterialController {
 
