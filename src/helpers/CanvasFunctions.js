@@ -9,33 +9,6 @@ export function setupCanvasScenesByNumberOfShoes(shoes = [], canvasToTarget, set
     const width = window.innerWidth;
     const height = window.innerHeight;
 
-    const lightingIntensities = [
-        {
-            "color": 0xFFFFFF,
-            "intensity": 2,
-        },
-        {
-            "color": 0xFFFFFF,
-            "intensity": 0.5,
-        },
-        {
-            "color": 0xFFFFFF,
-            "intensity": 1,
-        },
-        {
-            "color": 0xFFFFFF,
-            "intensity": 1,
-        },
-        {
-            "color": 0xFFFFFF,
-            "intensity": 1,
-        },
-        {
-            "color": 0xFFFFFF,
-            "intensity": 1,
-        }
-    ]
-
     const loader = new GLTFLoader();
 
     for (let i = 0; i < shoes.length; i++) {
@@ -92,7 +65,7 @@ export function setupCanvasScenesByNumberOfShoes(shoes = [], canvasToTarget, set
         controls.enableZoom = false;
         controls.enablePan = false;
 
-        const ambientalLight = new THREE.AmbientLight(lightingIntensities[i].color, lightingIntensities[i].intensity);
+        const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
         scene.add(ambientalLight);
         ambientalLight.position.y = 0;
 
