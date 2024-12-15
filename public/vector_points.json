@@ -16,7 +16,7 @@
             "z": 0.3
         },
         "element": "point-1",
-        "text": "Tacones fancy",
+        "text": "White heels",
         "model_id": 13
     },
     {
@@ -26,7 +26,7 @@
             "z": -0.6
         },
         "element": "point-2",
-        "text": "Derby shoes",
+        "text": "Old derby shoes",
         "model_id": 15
     },
     {
@@ -36,7 +36,7 @@
             "z": 0.11
         },
         "element": "point-3",
-        "text": "Tacones rojos y negros",
+        "text": "Black 'n' red heels",
         "model_id": 14
     },
     {
@@ -46,7 +46,7 @@
             "z": -5
         },
         "element": "point-4",
-        "text": "Derby shoes modern",
+        "text": "Modern derby shoes",
         "model_id": 16
     },
     {
@@ -56,7 +56,7 @@
             "z": -5
         },
         "element": "point-5",
-        "text": "Tacones elevados",
+        "text": "Espirit heels",
         "model_id": 6
     }
 ]
