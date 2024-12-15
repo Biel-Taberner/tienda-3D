@@ -17,7 +17,7 @@
         },
         "element": "point-1",
         "text": "Tacones fancy",
-        "model_id": 6
+        "model_id": 13
     },
     {
         "position": {
@@ -27,7 +27,7 @@
         },
         "element": "point-2",
         "text": "Derby shoes",
-        "model_id": 1
+        "model_id": 15
     },
     {
         "position": {
@@ -37,7 +37,7 @@
         },
         "element": "point-3",
         "text": "Tacones rojos y negros",
-        "model_id": 2
+        "model_id": 14
     },
     {
         "position": {
@@ -47,7 +47,7 @@
         },
         "element": "point-4",
         "text": "Derby shoes modern",
-        "model_id": 4
+        "model_id": 16
     },
     {
         "position": {
@@ -57,6 +57,6 @@
         },
         "element": "point-5",
         "text": "Tacones elevados",
-        "model_id": 5
+        "model_id": 6
     }
 ]
