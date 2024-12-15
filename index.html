@@ -336,15 +336,18 @@
                   <div class="slide slide-1" style="background-color: floralwhite;">
                     <div class="slide-wrapper" style="height: 100%; width: 90%; display: flex; margin-bottom: 30px;">
                       <div class="slide-canvas-wrapper" style="width: 100%;">
-                        <div style="color: black; visibility: hidden; width: 100%; cursor: pointer;" id="go-back">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                          </svg>
-                          Volver atrás
+                        <div class="go-back-button" id="go-back" style="position: absolute; width: fit-content;">
+                          <div style="position: relative;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                            </svg>
+                            Volver atrás
+                          </div>
                         </div>
-                        <canvas class="canvas-model-renderer" id="canvas-model-shoe-expositor-renderer"></canvas>
+                        <canvas class="canvas-model-renderer" id="canvas-model-shoe-expositor-renderer">
+                        </canvas>
                       </div>
-                      <div class="slide-canvas-info-wrapper" style="width: 100%; display: none; color: black;" id="canvas-model-shoe-expositor-renderer-info">
+                      <div class="slide-canvas-info-wrapper" style="width: 100%; display: none; color: black; padding: 10px 30px;" id="canvas-model-shoe-expositor-renderer-info">
                       </div>
                     </div>
                   </div>
