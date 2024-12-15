@@ -83,6 +83,9 @@ export function displayShoeWhenClickedPoint(vectorPoints = [], shoes = [], scene
           <div class="slide-canvas-info-subcontent">
             <p>${modelToDisplay.getDescription()}</p>
           </div>
+          <div class="slide-canvas-second-info-subcontent">
+            <div class="slide-canvas-info-button" style="color: white">Ver producto</div>
+          </div>
         </div>`
 
       loader.load(`/Models/${modelToDisplay.getName()}/${modelToDisplay.getMesh()}`, (gltf) => {
