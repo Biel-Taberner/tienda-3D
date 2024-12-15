@@ -2,6 +2,7 @@ import { Vector3 } from "three";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 import { Object3D } from "three";
 import { Timer } from 'three/addons/misc/Timer.js';
+import { loadMaterials } from "./MaterialFunctions";
 
 export function updateVectorPoints(points = [], camera, renderer) {
 
@@ -55,6 +56,8 @@ export function drawVectorsToHTML(vectorPoints = []) {
 
 export function displayShoeWhenClickedPoint(vectorPoints = [], shoes = [], scene, camera, renderer) {
 
+  console.log(shoes)
+
   const loader = new GLTFLoader();
 
   let shoeGFXObject = new Object3D();
@@ -94,6 +97,8 @@ export function displayShoeWhenClickedPoint(vectorPoints = [], shoes = [], scene
         const model = gltf.scene;
         model.renderOrder = 0;
         model.name = 'shoe_to_display';
+
+        loadMaterials(model, modelToDisplay);
 
         shoeGFXObject.add(model);
         shoeGFXObject.position.set(0, 10, -0.5);
