@@ -330,6 +330,7 @@ align-items: center;
     padding: 10px 20px; 
     border-radius: 30px; 
     cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.3s;
 }
 
