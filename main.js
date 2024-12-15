@@ -2,7 +2,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader, TrackballControls } from "three/examples/jsm/Addons.js";
-import { ShoeController } from "./controller/ShoeController";
+import { ShoeController } from "./controller/ShoeController.js";
 import { loadMaterials } from "./helpers/MaterialFunctions";
 import VectorPointsController from "./controller/VectorPointsController";
 import { updateVectorPoints, drawVectorsToHTML, displayShoeWhenClickedPoint } from "./helpers/VectorPointsFunctions";
