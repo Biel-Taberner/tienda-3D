@@ -1,6 +1,6 @@
 import gsap from "../node_modules/gsap/index.js";
-import Letterize from 'letterizejs'
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import Letterize from "../node_modules/letterizejs/src/letterize.js"
+import ScrollTrigger from "../node_modules/gsap/ScrollTrigger.js";
 
 // Registra el plugin ScrollTrigger amb GSAP.
 gsap.registerPlugin(ScrollTrigger);
