@@ -1,6 +1,6 @@
-# EleganceStep | A 3D Shoe Shop
+# AllFoot | A 3D Shoe Shop
 
-### <ul> <li> EleganceStep es una tienda online en 3D especializada en la venta de calzado. La aplicación usa como lenguaje de programación JavaScript, y Three.js como librería para el procesamiento de modelos y renderizado en 3D.
+### <ul> <li> AllFoot es una tienda online en 3D especializada en la venta de calzado. La aplicación usa como lenguaje de programación JavaScript, y Three.js como librería para el procesamiento de modelos y renderizado en 3D.
 
 ### Para inicializar el proyecto se ha de:
 
