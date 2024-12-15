@@ -66,10 +66,10 @@ const shoeGFXRotation = [
 
   const shoeGFXObject = new THREE.Object3D();
 
-  loader.load(`/Models/${filteredExpositorShoes[1].getName()}/${filteredExpositorShoes[1].getMesh()}`, (gltf) => {
+  loader.load(`/Models/${filteredExpositorShoes[0].getName()}/${filteredExpositorShoes[0].getMesh()}`, (gltf) => {
     const model = gltf.scene;
   
-    loadMaterials(model, filteredExpositorShoes[1]);
+    loadMaterials(model, filteredExpositorShoes[0]);
   
     shoeGFXObject.add(model)
 
@@ -122,6 +122,16 @@ const timer = new Timer();
 drawVectorsToHTML(vectorPoints)
 
 displayShoeWhenClickedPoint(vectorPoints, shoes, scene, camera, renderer)
+
+document.getElementById("go-back").addEventListener("click", (e) => {
+
+  e.currentTarget.style.visibility = "hidden";
+
+  document.getElementById("canvas-model-shoe-expositor-renderer-info").style.display = "none"
+
+  camera.position.set(0, 0.5, 1);
+
+})
 
 const tick = () => {
   updateVectorPoints(vectorPoints, camera, renderer)

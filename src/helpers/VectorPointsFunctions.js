@@ -65,8 +65,22 @@ export function displayShoeWhenClickedPoint(vectorPoints = [], shoes = [], scene
 
     document.getElementById(`shoe_model_${vectorPoint.getModelID()}`).addEventListener("click", (e) => {
 
+      document.getElementById("go-back").style.visibility = "visible";
+
       const idNumber = Number(getIDNumber(e.currentTarget.id));
       const modelToDisplay = findShoeByID(shoes, idNumber);
+
+      document.getElementById("canvas-model-shoe-expositor-renderer-info").style.display = "block";
+
+      document.getElementById("canvas-model-shoe-expositor-renderer-info").innerHTML = `
+        <div class="slide-canvas-info-subcontainer">
+          <div class="slide-canvas-info-title-content">
+            <h2>${modelToDisplay.getName()}</h2>
+          </div>
+          <div class="slide-canvas-info-subcontent">
+            <p>${modelToDisplay.getDescription()}</p>
+          </div>
+        </div>`
 
       loader.load(`/Models/${modelToDisplay.getName()}/${modelToDisplay.getMesh()}`, (gltf) => {
 
@@ -82,13 +96,13 @@ export function displayShoeWhenClickedPoint(vectorPoints = [], shoes = [], scene
         model.name = 'shoe_to_display';
 
         shoeGFXObject.add(model);
-        shoeGFXObject.position.set(0, 5, -0.5);
+        shoeGFXObject.position.set(0, 10, -0.5);
         shoeGFXObject.scale.set(1, 1, 1);
         scene.add(shoeGFXObject);
 
       });
 
-      camera.position.set(0, 5, 1.665);
+      camera.position.set(0, 10, 1.665);
 
     });
 
