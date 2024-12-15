@@ -447,6 +447,23 @@ background-color: #4e4f52;
 box-shadow: 0px 0px 10px black;
 }
 
+.go-back-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black; 
+    visibility: hidden; 
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px 10px black;
+    transition: 0.3s;
+}
+
+.go-back-button:hover {
+    background-color: rgb(220, 220, 220);
+}
 
 .card-carousel {
 display: flex;
