@@ -22,6 +22,8 @@ export default class VectorPointsService {
 
         position.setElement(vectorPointJSON.element);
 
+        position.setModelID(vectorPointJSON.model_id);
+
         return position;
 
     }

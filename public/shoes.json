@@ -1,11 +1,5 @@
 [
     {
-        "id": 1,
-        "type": "Expositor",
-        "name": "Casual Shoes Shelf",
-        "mesh": "casual_shoes_shelf.gltf"
-    },
-    {
         "id": 2,
         "type": "Expositor",
         "name": "Elegant Shoes Shelf",

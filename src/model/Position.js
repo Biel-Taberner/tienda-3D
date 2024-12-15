@@ -4,6 +4,7 @@ export default class Position extends Transform {
 
     #text;
     #element;
+    #model_id;
 
     getText() {
         return this.#text;
@@ -19,6 +20,14 @@ export default class Position extends Transform {
 
     setElement(element) {
         this.#element = element;
+    }
+
+    getModelID() {
+        return this.#model_id;
+    }
+
+    setModelID(model_id) {
+        this.#model_id = model_id;
     }
 
 }
