@@ -1,4 +1,4 @@
-import gsap from 'gsap';
+import gsap from "../node_modules/gsap/index.js";
 import Letterize from 'letterizejs'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
