@@ -1,5 +1,5 @@
-import { ShoeController } from "./controller/ShoeController";
-import { setupCanvasScenesByNumberOfShoes } from "./helpers/CanvasFunctions";
+import { ShoeController } from "./controller/ShoeController.js";
+import { setupCanvasScenesByNumberOfShoes } from "./helpers/CanvasFunctions.js";
 
 const shoeController = new ShoeController();
 
