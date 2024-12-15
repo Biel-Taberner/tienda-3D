@@ -1,5 +1,5 @@
-import { MaterialService } from "/service/MaterialService.js";
-import { ShoeService } from "/service/ShoeService.js";
+import { MaterialService } from "/tienda-3D/service/MaterialService.js";
+import { ShoeService } from "/tienda-3D/service/ShoeService.js";
 
 export class ShoeController {
 
