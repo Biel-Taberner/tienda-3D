@@ -3,66 +3,77 @@
         "id": 2,
         "type": "Expositor",
         "name": "Elegant Shoes Shelf",
+        "description": "Elegant shoe shelf",
         "mesh": "elegant_shoe_shelf.gltf"
     },
     {
         "id": 3,
         "type": "Shoe",
         "name": "Old Oxford Shoe",
+        "description": "Descubre el clásico perfecto que combina estilo, comodidad y distinción. Fabricados con materiales premium y un diseño que nunca pasa de moda, son ideales para destacar en cualquier ocasión, desde reuniones formales hasta eventos especiales.",
         "mesh": "old_oxford_shoe.gltf"
     },
     {
         "id": 4,
         "type": "Shoe",
         "name": "Nike Air Jordan Shoe",
+        "description": "Descubre el icónico estilo y rendimiento de los Nike Air Jordan, diseñados para marcar la diferencia dentro y fuera de la cancha. Confeccionados con materiales de primera calidad, estos tenis ofrecen comodidad superior y soporte excepcional gracias a su tecnología de amortiguación Air. Su diseño atemporal, combinado con detalles que rinden homenaje a la leyenda del baloncesto, los convierte en un imprescindible para los amantes del deporte y la moda urbana.",
         "mesh": "air_jordan.gltf"
     },
     {
         "id": 5,
         "type": "Shoe",
         "name": "Adidas Football Boots",
+        "description": "Domina el terreno de juego con las Adidas Football Boots, diseñadas para ofrecer tracción superior, control preciso del balón y máxima velocidad. Su suela especializada se adapta a diferentes superficies, mientras que la parte superior flexible y transpirable asegura un ajuste cómodo. Ya seas un profesional o un aficionado, estas botas te llevarán al siguiente nivel, permitiéndote rendir al máximo en cada partido.",
         "mesh": "adidas_football_boots.gltf"
     },
     {
         "id": 6,
         "type": "Shoe",
         "name": "Espirit Heels",
+        "description": "Elegancia y comodidad se combinan en los Espirit Heels, ideales para cualquier ocasión. Con un diseño sofisticado y versátil, estos tacones destacan por su fabricación en materiales suaves y resistentes que garantizan confort durante todo el día. Perfectos para eventos formales o salidas casuales, los Espirit Heels son el toque final perfecto para tu outfit.",
         "mesh": "espirit_heels.gltf"
     },
     {
         "id": 7,
         "type": "Iconic",
         "name": "Adidas Flip Flops",
+        "description": "Unas adidas flip flops",
         "mesh": "adidas_flip_flops.gltf"
     },
     {
         "id": 8,
         "type": "Iconic",
         "name": "Crocs Slippers",
+        "description": "Unos crocs slippers",
         "mesh": "crocs_slippers.gltf"
     },
     {
         "id": 9,
         "type": "Iconic",
         "name": "Puma Sandals",
+        "description": "Unas sandalias de puma",
         "mesh": "puma_sandals.gltf"
     },
     {
         "id": 10,
         "type": "Iconic",
         "name": "Nike Slippers",
+        "description": "Unas nike slippers",
         "mesh": "nike_slippers.gltf"
     },
     {
         "id": 11,
         "type": "Iconic",
         "name": "Nike Flip Flops",
+        "description": "Unas nike flip flops",
         "mesh": "nike_flip_flops.gltf"
     },
     {
         "id": 12,
         "type": "Iconic",
         "name": "Kubota Flip Flops",
+        "description": "Unas kubota flip flops",
         "mesh": "kubota_flip_flops.gltf"
     }
 ]
