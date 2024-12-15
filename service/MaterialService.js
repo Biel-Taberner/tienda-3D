@@ -1,5 +1,5 @@
-import { Material } from "/tienda-3D/model/Material";
-import { Texture } from "/tienda-3D/model/Texture";
+import { Material } from "/tienda-3D/model/Material.js";
+import { Texture } from "/tienda-3D/model/Texture.js";
 
 export class MaterialService {
 

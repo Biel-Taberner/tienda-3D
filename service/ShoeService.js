@@ -1,4 +1,4 @@
-import { Shoe } from "/tienda-3D/model/Shoe";
+import { Shoe } from "/tienda-3D/model/Shoe.js";
 
 export class ShoeService {
 

@@ -1,4 +1,4 @@
-import Position from "/tienda-3D/model/Position";
+import Position from "/tienda-3D/model/Position.js";
 
 export default class VectorPointsService {
 
