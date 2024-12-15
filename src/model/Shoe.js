@@ -4,12 +4,14 @@ export class Shoe {
     #type;
     #name;
     #mesh;
+    #description;
     #materials;
 
-    constructor(id, type, name, mesh) {
+    constructor(id, type, name, description, mesh) {
         this.#id = id;
         this.#type = type;
         this.#name = name;
+        this.#description = description;
         this.#mesh = mesh;
     }
 
@@ -35,6 +37,14 @@ export class Shoe {
 
     setName(name) {
         this.#name = name;
+    }
+
+    getDescription() {
+        return this.#description;
+    }
+
+    setDescription(description) {
+        this.#description = description;
     }
 
     getMesh() {
