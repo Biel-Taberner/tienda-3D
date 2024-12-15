@@ -2,137 +2,145 @@ import gsap from "gsap";
 import Letterize from "letterizejs"
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+// Registra el plugin ScrollTrigger amb GSAP.
 gsap.registerPlugin(ScrollTrigger);
 
+// Afegir interaccions per als enllaços del contenidor de capçalera.
 document.querySelectorAll("#header-container-link").forEach((link) => {
-link.addEventListener("mouseover", (e) => {
+
+  // Detecta quan el ratolí passa sobre un enllaç.
+  link.addEventListener("mouseover", (e) => {
     const loaderBar = e.target.closest("div").previousElementSibling;
-
+    
+    // Anima la barra del carregador per fer-la visible.
     gsap.to(loaderBar, {
-    width: "100%",
-    duration: 0.8,
+      width: "100%",
+      duration: 0.8,
     });
-});
+  });
 
-link.addEventListener("mouseleave", (e) => {
+  // Detecta quan el ratolí surt de l'enllaç.
+  link.addEventListener("mouseleave", (e) => {
     const loaderBar = e.target.closest("div").previousElementSibling;
+    
+    // Anima la barra del carregador per ocultar-la.
     gsap.to(loaderBar, {
-    width: "0%",
-    duration: 0.8,
+      width: "0%",
+      duration: 0.8,
     });
-});
+  });
 });
 
-const iconTimeline = gsap.timeline()
+// Crea una línia de temps per animacions d'icones.
+const iconTimeline = gsap.timeline();
 
+// Selecciona la icona de la barra de cerca.
 const icon = document.getElementById("header-container-searchBar-subcontainer-icon");
 
+// Afegeix un esdeveniment de clic per a la icona.
 icon.addEventListener("click", (e) => {
-iconTimeline.to(e.target, {
+  // Anima la rotació de la icona.
+  iconTimeline.to(e.target, {
     duration: 1,
     rotate: "360",
     ease: "power2.out",
-});
+  });
 
-iconTimeline.to(".header-container-searchBar", {
-
+  // Amplia la barra de cerca.
+  iconTimeline.to(".header-container-searchBar", {
     width: "234px",
     stagger: 0.1
+  });
 
-})
-
-iconTimeline.to(".header-container-searchBar-subcontainer", {
-
+  // Ajusta el subcontenidor de la barra de cerca.
+  iconTimeline.to(".header-container-searchBar-subcontainer", {
     stagger: 0.05,
+  });
 
-})
-
-iconTimeline.to(".header-container-searchBar-subcontainer-textInput", {
-
+  // Mostra el camp de text d'entrada.
+  iconTimeline.to(".header-container-searchBar-subcontainer-textInput", {
     display: "flex",
     width: "100%"
+  });
 
-})
-
-iconTimeline.to("#searchBar-textInput", {
-
+  // Amplia el camp de text d'entrada completament.
+  iconTimeline.to("#searchBar-textInput", {
     width: "100%",
-
-})
-
+  });
 });
 
+// Selecciona el logotip.
 const logo = document.getElementById("header_logo");
 
+// Detecta quan el ratolí passa sobre el logotip.
 logo.addEventListener("mouseover", (e) => {
-
-gsap.to(e.target, {
+  gsap.to(e.target, {
     duration: 1,
     ease: "power2.out",
     overwrite: true,
     scale: "1.3",
+  });
 });
 
-})
-
+// Detecta quan el ratolí surt del logotip.
 logo.addEventListener("mouseleave", (e) => {
-gsap.to(e.target, {
+  gsap.to(e.target, {
     duration: 1,
     ease: "power2.out",
     scale: "1",
-});
+  });
 });
 
-
+// Crea una línia de temps per animacions del títol.
 const timeline = gsap.timeline();
 
+// Divideix el text del títol en caràcters utilitzant Letterize.
 const splittedTitleText = new Letterize({targets: "#main-body-first-section-title-text"});
 
 timeline.from(splittedTitleText.list, {
-
   stagger: 0.075,
   duration: 0.5,
   opacity: 0,
   transformOrigin: "0% 50% -50",
   rotateY: 180,
-
-})
+});
 
 timeline.to("#bottomBorderTitleLine", {
   duration: 0.35,
   stagger: 0.25,
   width: "100%"
-})
+});
 
 timeline.to("#rightBorderTitleLine", {
   duration: 0.35,
   stagger: 0.25,
   height: "100%"
-})
+});
 
 timeline.to("#topBorderTitleLine", {
   duration: 0.35,
   stagger: 0.25,
   width: "100%"
-})
+});
 
 timeline.to("#leftBorderTitleLine", {
   duration: 0.35,
   stagger: 0.25,
   height: "100%"
-})
+});
 
 timeline.to(splittedTitleText.list, {
   stagger: 0.05,
   textShadow: "2px 2px 10px black"
-})
+});
 
-
+// Configura les línies de separació del peu de pàgina inicialment ocultes.
 gsap.set(".footer-container-info-box-tab-title-subcontainer-hr", {
   width: "0px",
   visibility: "hidden",
-})
+});
 
+// Anima les línies de separació del peu de pàgina quan apareixen al viewport.
 gsap.to(".footer-container-info-box-tab-title-subcontainer-hr", {
   stagger: 0.25,
   duration: 1,
@@ -142,14 +150,9 @@ gsap.to(".footer-container-info-box-tab-title-subcontainer-hr", {
   scrollTrigger: {
     trigger: ".footer-container-info-box-tab-title-subcontainer-hr",
   }
-})
+});
 
-
-
-
-
-
-
+// Defineix colors per a les diapositives.
 const colors = [
   "#8D6346",
   "#6E0000",
@@ -166,10 +169,10 @@ const prev = document.getElementById("prev");
 let currentIndex = 0;
 let isTweening = false;
 
+// Configura les diapositives inicials.
 slidesArray.forEach((slides) => {
   slides.forEach((slide, i) => {
     gsap.set(slide, {
-      // backgroundColor: colors[i],
       xPercent: i > 0 && 100
     });
   });
@@ -205,13 +208,15 @@ const gotoSlide = (value) => {
   gsap.to(nextSlides, {
     backgroundColor: colors[currentIndex],
     duration: 2
-  })
+  });
 };
 
+// Afegeix esdeveniments per navegar entre diapositives.
 next.addEventListener("click", () => gotoSlide(1));
 prev.addEventListener("click", () => gotoSlide(-1));
 
 
+// Repetim exactament tot el mateix procés (no ho tornaré a comentar)
 const colorsIconShoes = [
   "#8D6346",
   "#6E0000",
