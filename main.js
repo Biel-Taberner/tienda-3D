@@ -3,9 +3,9 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader, TrackballControls } from "three/examples/jsm/Addons.js";
 import { ShoeController } from "./controller/ShoeController.js";
-import { loadMaterials } from "./helpers/MaterialFunctions";
-import VectorPointsController from "./controller/VectorPointsController";
-import { updateVectorPoints, drawVectorsToHTML, displayShoeWhenClickedPoint } from "./helpers/VectorPointsFunctions";
+import { loadMaterials } from "./helpers/MaterialFunctions.js";
+import VectorPointsController from "./controller/VectorPointsController.js";
+import { updateVectorPoints, drawVectorsToHTML, displayShoeWhenClickedPoint } from "./helpers/VectorPointsFunctions.js";
 import { Timer } from 'three/addons/misc/Timer.js';
 
 // Inicialització del controlador de sabates

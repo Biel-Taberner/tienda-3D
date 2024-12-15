@@ -2,7 +2,7 @@ import { Vector3 } from "three";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 import { Object3D } from "three";
 import { Timer } from 'three/addons/misc/Timer.js';
-import { loadMaterials } from "./MaterialFunctions";
+import { loadMaterials } from "./MaterialFunctions.js";
 
 export function updateVectorPoints(points = [], camera, renderer) {
 

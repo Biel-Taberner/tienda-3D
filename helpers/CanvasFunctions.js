@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 import { Timer } from 'three/addons/misc/Timer.js';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { loadMaterials } from "./MaterialFunctions";
+import { loadMaterials } from "./MaterialFunctions.js";
 
 export function setupCanvasScenesByNumberOfShoes(shoes = [], canvasToTarget, setCanvasPositionToAbsolute = false) {
     // Defineix una funció per configurar escenes de canvas segons el nombre de sabates.

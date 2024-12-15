@@ -1,4 +1,4 @@
-import VectorPointsService from "../service/VectorPointsService";
+import VectorPointsService from "../service/VectorPointsService.js";
 
 export default class VectorPointsController {
 

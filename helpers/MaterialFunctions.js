@@ -1,6 +1,6 @@
 import { MeshPhongMaterial, MeshStandardMaterial, FrontSide } from "three";
-import { loadTextures } from "./TextureFunctions";
-import { Texture } from "../model/Texture";
+import { loadTextures } from "./TextureFunctions.js";
+import { Texture } from "../model/Texture.js";
 
 export function loadMaterials(gltfModel, shoeModel) {
     // Funció per carregar i aplicar materials a un model GLTF basat en la configuració del model de sabata.

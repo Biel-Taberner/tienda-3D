@@ -1,4 +1,4 @@
-import { MaterialService } from "../service/MaterialService";
+import { MaterialService } from "../service/MaterialService.js";
 
 export class MaterialController {
 
